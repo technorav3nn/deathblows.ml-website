@@ -8,7 +8,7 @@ const app = express_1.default();
 app.set("view engine", "ejs");
 app.set("json spaces", 2);
 app.use(express_1.default.urlencoded({ extended: false }));
-app.use(express_1.default.static(process.cwd() + "/views"));
+app.use(express_1.default.static(__dirname + "/views"));
 app.get("/", (req, res) => {
     res.render("index", { test: ["bruh", "hello", "13234", "last one i swear"] });
 });
