@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "es2020",
+        "outDir": "dist",
+        "rootDir": "src",
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["node_modules"]
+}
