@@ -1,12 +1,14 @@
 import express, { Request, Response } from "express";
+import path from "path";
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.set("json spaces", 2);
+app.set("views", path.join(__dirname, "views"));
 
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(__dirname + "/views"));
+app.use(express.static(path.join(__dirname, "views")));
 
 app.get("/", (req, res) => {
     res.render("index", { test: ["bruh", "hello", "13234", "last one i swear"] });
