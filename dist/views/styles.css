@@ -1,7 +1,0 @@
-.vertical-center {
-    height: 100%;
-    width: 100%;
-
-    text-align: center; /* align the inline(-block) elements horizontally */
-    display: inline-block;
-}
