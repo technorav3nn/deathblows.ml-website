@@ -5,7 +5,7 @@
         "express": "^4.17.1"
     },
     "scripts": {
-        "build": "tsc",
+        "build": "echo \"No build\"",
         "start": "node dist/server.js"
     }
 }
