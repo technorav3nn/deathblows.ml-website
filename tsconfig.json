@@ -4,7 +4,8 @@
         "target": "esnext",
         "outDir": "dist",
         "rootDir": "src",
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
     },
     "exclude": ["node_modules"]
 }
